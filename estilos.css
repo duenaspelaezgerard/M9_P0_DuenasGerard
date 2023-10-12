@@ -1,0 +1,538 @@
+/* Reset de estilos para todos los elementos, eliminando márgenes y rellenos predeterminados,
+y asegurando que el tamaño total incluya el relleno y el borde */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    font-size: 20px; /* Tamaño de fuente */
+    color: #7F888F; /* Color del texto */
+}
+
+/* Estilos para elementos con clase 'izq' */
+.izq {
+    width: 20%; /* Ancho del 20% para elementos con clase 'izq' */
+}
+
+.derec {
+    width: 80%; /* Ancho del 80% */
+}
+
+/* Estilos para listas no ordenadas y sus elementos de lista */
+ul li {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    color: #3d4449; /* Color del texto para elementos de lista no ordenada */
+}
+
+/* Cambia el color del texto y el cursor al pasar el mouse sobre elementos de lista */
+ul li:hover {
+    color: #f56a6a;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex; /* Usa el modelo de caja flexible para el contenedor */
+}
+
+/* Estilos para encabezados de nivel 2 */
+h2 {
+    color: #3d4449;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.38889em;
+    border-bottom: solid 3px #f56a6a; /* Borde inferior con color de fondo */
+    width: 80px; /* Ancho fijo del borde inferior */
+}
+
+/* Estilos para el menú izquierdo */
+.menuIzqui {
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75); /* Borde inferior con color semitransparente */
+}
+
+/* Estilos para el menú principal */
+.menu {
+    background-color: #f5f6f7; /* Color de fondo del menú */
+    padding: 0 55px; /* Relleno horizontal del menú */
+}
+
+/* Estilos para listas dentro del menú */
+.menu ul {
+    padding: 35px 0; /* Relleno interno de la lista dentro del menú */
+}
+
+/* Estilos para elementos de lista dentro del menú */
+.menu ul li {
+    font-size: 0.9em; /* Tamaño de fuente reducido para elementos de lista */
+    letter-spacing: 0.075em; /* Espaciado entre letras */
+    border-top: solid 1px rgba(210, 215, 217, 0.75); /* Borde superior con color semitransparente */
+    padding: 10px; /* Relleno interno de elementos de lista */
+}
+
+/* Estilos para el menú y submenú */
+.menu span {
+    color: #7F888F; 
+    border: #7F888F 0px solid; /* Borde sin color */
+}
+
+.submenu i {
+    margin-left: 80px;
+}
+
+.lorem i {
+    margin-left: 110px; 
+}
+
+.submenu:hover li {
+    border-top: solid 0px rgb(255, 255, 255); /* Borde superior cuando se pasa el mouse sobre los elementos de submenú */
+}
+
+.lorem:hover li {
+    border-top: solid 0px rgb(255, 255, 255); /* Borde superior cuando se pasa el mouse sobre los elementos de Lorem */
+}
+
+/* Estilos para listas anidadas */
+.listaAnidada {
+    display: none; /* Oculta la lista anidada por defecto */
+    color: #9FA3A6; /* Color del texto de la lista anidada */
+}
+
+.listaAnidada li {
+    color: #9FA3A6; 
+}
+
+li:hover ul {
+    display: block; /* Muestra la lista anidada cuando se pasa el mouse sobre el elemento padre */
+}
+
+/*MENU 3 FOTOS*/
+
+.ante_inter{
+    margin: 35px 0;
+    width: 200px;
+    line-height: 2;
+    font-size: 1.38889em;
+}
+
+.cuadrado {
+    width: 100%; /* Ancho completo del elemento */
+    margin-bottom: 30px; /* Margen inferior */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    line-height: 1.5; /* Altura de línea */
+}
+
+.cuadrado p {
+    margin-top: 15px; /* Margen superior para los párrafos dentro de "cuadrado" */
+}
+
+.cuadrado img {
+    width: 100%; /* Ancho completo para las imágenes dentro de "cuadrado" */
+    cursor: pointer; /* Cursor de puntero al pasar el mouse sobre las imágenes */
+
+}
+
+.br-ar {
+    padding: 30px 0; /* Relleno arriba y abajo */
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75); 
+    border-top: solid 2px rgba(210, 215, 217, 0.75); 
+}
+
+.botonMenu {
+    border: 2px solid #f56a6a; 
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; 
+    padding-left: 30px; /* Relleno izquierdo */
+    color: #f56a6a; 
+    font-family: 'Roboto Slab', serif; /* Fuente */
+    width: 100px; /* Ancho del botón */
+    font-size: 12px; /* Tamaño de la fuente */
+    margin-top: auto; 
+    margin-bottom: 0px; 
+    cursor: pointer; 
+}
+
+
+/*MENU 3 ICONOS ABAJO DEL TODO*/
+
+.ante_int{
+    margin: 35px 0;
+    width: 170px;
+    line-height: 2;
+    font-size: 1.38889em;
+}
+
+.textito{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.combi {
+    padding: 10px 0; /* Relleno arriba y abajo */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    line-height: 1.5; /* Altura de línea */
+    display: flex; /* Diseño flexible para elementos hijos */
+}
+
+/* Estilos para elementos con clase "combi_medio" */
+.combi_medio {
+    padding: 10px 0; 
+    font-size: 18px; 
+    font-family: 'Open Sans', sans-serif; 
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75); 
+    border-top: solid 2px rgba(210, 215, 217, 0.75); 
+    margin: 20px 0;
+    padding: 35px 0;
+    display: flex; 
+}
+
+/* Estilos para elementos con clase "correo" en estado de desplazamiento (hover) */
+.correo:hover {
+    cursor: pointer; /* Cursor de puntero al pasar el mouse sobre el elemento */
+    color: #f56a6a; /* Cambia el color del texto a rojo */
+    text-decoration: underline; /* Subraya el texto al pasar el mouse sobre el elemento */
+}
+
+/* Estilos para elementos con clase "combi" */
+.combi i {
+    color: #f56a6a; /* Color del icono */
+    font-size: 25px; /* Tamaño del icono */
+    margin-right: 20px; 
+}
+
+/* Estilos para elementos con clase "combi_medio" que contienen iconos */
+.combi_medio i {
+    color: #f56a6a; /* Color del icono */
+    font-size: 25px; /* Tamaño del icono */
+    margin-right: 20px; /* Márgen derecho del icono */
+}
+
+.textoAbajo {
+    border-top: solid 2px rgba(210, 215, 217, 0.75); 
+    padding-top: 60px; 
+    color: #9FA3A6; 
+    font-size: 16px; 
+}
+
+/* Estilos para elementos con clase "espacio" */
+.espacio {
+    margin-bottom: 50px; /* Márgen inferior */
+}
+
+/* Estilos para elementos con clase "menuT" */
+.menuT {
+    padding-top: 15px; /* Relleno superior */
+}
+
+/* Estilos para el buscador */
+.buscador {
+    background-color: #d2d7d9bf;
+    padding: 55px; 
+}
+
+.inputBuscador {
+    border: 1px solid black; /* Borde negro */
+    width: 90%; /* Ancho del elemento */
+    padding: 20px; /* Relleno interno */
+    border-radius: 8px; /* Bordes redondeados */
+    border-color: rgb(213, 213, 213); /* Color del borde */
+}
+
+.buscador i {
+    margin-left: -38px; /* Márgen izquierdo negativo para el ícono */
+    color: rgb(213, 213, 213); /* Color del ícono */
+}
+
+/* Estilos para la parte derecha */
+.contenido {
+    width: 1300px; /* Ancho del contenido */
+    margin: 0 auto; /* Centra el contenido en el contenedor */
+}
+
+/* Estilos para la parte de arriba (barra horizontal de menú) */
+.menuHorizontal {
+    width: 100%; /* Ancho completo */
+    display: flex; /* Diseño flexible para los elementos hijos */
+    justify-content: space-between; /* Distribución del espacio entre los elementos hijos */
+    border-bottom: solid 5px #f56a6a; /* Borde inferior de 5px con color rojo */
+    padding-bottom: 20px; /* Relleno inferior */
+    margin-top: 65px; /* Márgen superior */
+}
+
+.menuHorizontal p {
+    color: #3d4449; 
+    font-family: "Roboto Slab", serif; 
+}
+
+/* Estilos para los elementos <p> dentro de .menuHorizontal en estado de desplazamiento (hover) */
+.menuHorizontal p:hover {
+    color: #f56a6a; /* Cambia el color del texto a rojo */
+    cursor: pointer; /* Cursor de puntero al pasar el mouse sobre el elemento */
+}
+
+/* Estilos para elementos con clase "listaIconos" */
+.listaIconos {
+    display: flex; /* Diseño flexible para los elementos hijos */
+    justify-content: space-between; /* Distribución del espacio entre los elementos hijos */
+    width: 250px; /* Ancho del contenedor */
+}
+
+.listaIconos i {
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+/* Estilos para la parte central */
+.central {
+    display: flex; /* Diseño flexible para los elementos hijos */
+    margin-top: 70px; /* Márgen superior */
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75); /* Borde inferior de 2px con color gris */
+}
+
+/* Estilos para la parte izquierda (.parteIzqui) de la sección central */
+.parteIzqui {
+    margin-right: 50px; /* Márgen derecho */
+    height: 600px; /* Altura del elemento */
+}
+
+/* Estilos para la parte derecha (.parteDerec) de la sección central */
+.parteDerec {
+    height: 600px; /* Altura del elemento */
+}
+
+/* Estilos para el elemento <h1> */
+h1 {
+    font-size: 70px; /* Tamaño de la fuente */
+    color: #3d4449; /* Color del texto */
+    font-family: 'Roboto Slab', serif; /* Fuente */
+}
+
+/* Estilos para el elemento <h3> */
+h3 {
+    margin: 20px 0; /* Márgenes superior e inferior */
+    font-weight: 300; /* Grosor de la fuente */
+}
+
+/* Estilos para elementos de texto (.textoI) */
+.textoI {
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-weight: 300; /* Grosor de la fuente */
+    font-size: 15px; /* Tamaño de la fuente */
+    margin-bottom: 35px; /* Márgen inferior */
+    line-height: 1.5; /* Altura de línea */
+}
+
+/* Estilos para el botón con clase "boton" */
+.boton {
+    border: 2px solid #f56a6a; /* Borde sólido con color rojo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Relleno interno */
+    padding-left: 30px; /* Relleno izquierdo adicional */
+    color: #f56a6a; /* Color del texto */
+    font-family: 'Roboto Slab', serif; /* Fuente */
+    width: 150px; /* Ancho del botón */
+    font-size: 12px; /* Tamaño de la fuente */
+    margin-top: auto; /* Márgen superior automático */
+    margin-bottom: 0px; /* Sin márgen inferior */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+/* Estilos para todas las imágenes en la página */
+img {
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/*SECCION MENU4*/
+.articulo{
+    height: 550px;
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+}
+
+.erat{
+    width: 170px;
+    line-height: 2;
+}
+.notas{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.nota{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.icono{
+    width: 50%;
+}
+
+.iconoDentro{
+    border-radius: 0.25rem;
+    border: solid 2px rgba(210, 215, 217, 0.75);
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    padding: 40px;
+    margin-bottom:-30px;
+}
+
+.content h3{
+    color: #3d4449;
+    font-family: 'Roboto Slab', serif ;
+    font-size: 22px;
+}
+
+.content p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+
+/* Estilos para el icono */
+.fa-gem {
+    color: #f56a6a; /* Color del icono */
+    transform: rotate(-45deg); /* Rotación del icono en sentido contrario a las agujas del reloj */
+    font-size: 50px; /* Tamaño del icono */
+    margin: -11px; /* Márgen negativo para ajustar la posición */
+}
+
+
+.fa-paper-plane {
+    color: #f56a6a; /* Color del icono */
+    transform: rotate(-45deg); /* Rotación del icono en sentido contrario a las agujas del reloj */
+    font-size: 47px; /* Tamaño del icono */
+    margin: -14px; /* Márgen negativo para ajustar la posición */
+}
+
+
+.fa-signal {
+    color: #f56a6a; /* Color del icono */
+    transform: rotate(-45deg); /* Rotación del icono en sentido contrario a las agujas del reloj */
+    font-size: 45px; /* Tamaño del icono */
+    margin: -27px; /* Márgen negativo para ajustar la posición */
+}
+
+
+.fa-rocket {
+    color: #f56a6a; /* Color del icono */
+    transform: rotate(-45deg); /* Rotación del icono en sentido contrario a las agujas del reloj */
+    font-size: 50px; /* Tamaño del icono */
+    margin: -11px; /* Márgen negativo para ajustar la posición */
+}
+
+
+/*MENU6*/
+
+.ipsum{
+    margin-top: 35px;
+    width: 250px;
+    line-height: 2;
+}
+
+.boton1{
+    border:2px solid #f56a6a;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 30px;
+    color: #f56a6a;
+    font-family: 'Roboto Slab', serif ;
+    width: 100px;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    cursor: pointer;
+    margin-top: 45px; 
+}
+
+.boton2{
+    border:2px solid #f56a6a;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 30px;
+    color: #f56a6a;
+    font-family: 'Roboto Slab', serif ;
+    width: 100px;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+.menu4{
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+    height: 1150px;
+}
+
+.carta h3{
+    color: #3d4449;
+    font-family: 'Roboto Slab', serif ;
+    font-size: 22px;
+}
+
+/* Estilos para el contenedor de cartas con clase "cartas" */
+.cartas {
+    margin-top: 50px; /* Márgen superior */
+    display: flex; /* Diseño flexible para los elementos hijos */
+    flex-wrap: wrap; /* Los elementos pueden envolver a la siguiente línea si no hay espacio suficiente */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para cada carta con clase "carta" */
+.carta {
+    width: 33%; /* Ancho del tercio del contenedor padre */
+    justify-content: space-between; /* Distribución uniforme del espacio entre los elementos hijos */
+    display: block; /* Establece el elemento como un bloque */
+    padding: 10px; /* Relleno interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    line-height: 1.5; /* Altura de línea */
+    height: 500px; /* Altura de la carta */
+}
+
+/* Estilos para las imágenes dentro de las cartas */
+.carta img {
+    width: 300px; /* Ancho de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para bordes derechos e inferiores de las cartas con clases específicas */
+.br-d-a {
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75); /* Borde inferior de 2px con color gris */
+    border-right: solid 2px rgba(210, 215, 217, 0.75); /* Borde derecho de 2px con color gris */
+}
+
+.br-i-a {
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75); /* Borde inferior de 2px con color gris */
+}
+
+.br-i-d {
+    border-left: solid 2px rgba(210, 215, 217, 0.75); /* Borde izquierdo de 2px con color gris */
+    border-right: solid 2px rgba(210, 215, 217, 0.75); /* Borde derecho de 2px con color gris */
+}
+
+/* Estilos para el botón dentro de las cartas con clase "boton" */
+.carta .boton {
+    margin-top: 10px; /* Márgen superior */
+}
+
+/* Estilos para clases de relleno izquierdo y derecho específicas */
+.pd {
+    padding-left: 60px; /* Relleno izquierdo de 60px */
+    padding-right: 60px; /* Relleno derecho de 60px */
+}
+
+.pd2 {
+    padding-left: 120px; /* Relleno izquierdo de 120px */
+}
